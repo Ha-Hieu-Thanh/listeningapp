@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ListeningController">
+   <children>
+      <AnchorPane fx:id="main" layoutX="318.0" prefHeight="800.0" prefWidth="962.0">
+         <children>
+            <Label fx:id="heading" alignment="CENTER" prefHeight="146.0" prefWidth="962.0" text="Listening" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="namePodcast" alignment="CENTER" layoutY="129.0" prefHeight="63.0" prefWidth="962.0" text="Podcast's Name" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="48.0" />
+               </font>
+            </Label>
+            <Label fx:id="track" alignment="CENTER" layoutY="192.0" prefHeight="27.0" prefWidth="962.0" text="Click play to start dictation" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="42.0" layoutY="277.0" prefHeight="75.0" prefWidth="76.0" style="-fx-background-color: #fff; -fx-border-radius: 10px;">
+               <children>
+                  <ProgressBar fx:id="progressMedia" layoutX="1.0" layoutY="256.0" prefHeight="19.0" prefWidth="876.0" progress="0.0" />
+                  <Button fx:id="playButton" layoutX="371.0" layoutY="88.0" mnemonicParsing="false" onAction="#playMedia" prefHeight="99.0" prefWidth="136.0" textFill="#f1f5f8">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="iconPlay" fitHeight="75.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="replayButton" layoutX="279.0" layoutY="154.0" mnemonicParsing="false" onAction="#resetMedia" prefHeight="51.0" prefWidth="160.0" text="Replay" textFill="#f1f5f8">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="iconReplay" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="nextButton" layoutX="460.0" layoutY="154.0" mnemonicParsing="false" onAction="#nextMedia" prefHeight="51.0" prefWidth="160.0" text="Next " textFill="#f1f5f8">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="iconNext" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="finishButton" layoutX="460.0" layoutY="154.0" mnemonicParsing="false" onAction="#finishPodcast" prefHeight="51.0" prefWidth="160.0" text="Finish" textFill="#f1f5f8">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="iconFinish" fitHeight="30.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Text fx:id="textAnswer" layoutX="19.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="838.9367065429688">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <Slider fx:id="volumeSlider" layoutX="723.0" layoutY="603.0" prefHeight="27.0" prefWidth="200.0" value="50.0" />
+            <TextField fx:id="input" layoutX="41.0" layoutY="667.0" prefHeight="51.0" prefWidth="717.0" promptText="Write a word here">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextField>
+            <Button fx:id="hintButton" layoutX="184.0" layoutY="591.0" mnemonicParsing="false" onAction="#showHint" text="Hint" textFill="#f1f5f8">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="iconHint" fitHeight="31.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Button>
+            <ComboBox fx:id="speedBox" layoutX="783.0" layoutY="667.0" onAction="#changeSpeed" prefHeight="51.0" prefWidth="136.0" promptText="Speed" />
+            <Label fx:id="hint" layoutX="340.0" layoutY="591.0" prefHeight="51.0" prefWidth="316.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="iconVolume" fitHeight="51.0" fitWidth="55.0" layoutX="656.0" layoutY="591.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="stopButton" layoutX="42.0" layoutY="591.0" mnemonicParsing="false" onAction="#stopMedia" prefHeight="51.0" prefWidth="122.0" text="Stop">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="iconStop" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="sideBar" layoutX="-6.0" layoutY="-1.0" prefHeight="808.0" prefWidth="330.0">
+         <children>
+            <Label fx:id="team" alignment="CENTER" layoutX="3.0" prefHeight="130.0" prefWidth="323.0" text="TEAM 1">
+               <graphic>
+                  <ImageView fx:id="iconLogo" fitHeight="78.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Label>
+            <Button fx:id="backButton" alignment="TOP_LEFT" layoutX="7.0" layoutY="687.0" mnemonicParsing="false" onAction="#backScene" prefHeight="70.0" prefWidth="323.0" text=" BACK">
+               <graphic>
+                  <ImageView fx:id="iconBack" fitHeight="44.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" x="20.0" />
+               </graphic>
+               <padding>
+                  <Insets left="40.0" top="15.0" />
+               </padding></Button>
+         </children>
+      </AnchorPane>
+   </children>
+   <stylesheets>
+      <URL value="@../../style.css/base.css" />
+      <URL value="@../../style.css/ListeningSceneStyle.css" />
+   </stylesheets>
+</AnchorPane>

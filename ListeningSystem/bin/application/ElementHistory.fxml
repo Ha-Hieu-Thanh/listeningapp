@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="140.0" prefWidth="785.0" style="-fx-background-color: #2A1C42;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ElementHistoryController">
+   <children>
+      <ImageView fx:id="iconFlash" fitHeight="80.0" fitWidth="80.0" layoutX="29.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/icons8-flash-64.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="name" layoutX="135.0" layoutY="16.0" prefHeight="27.0" prefWidth="402.0" stylesheets="@../../style.css/elementHistory.css" text="Name's Podcast: ..." textFill="#f1f5f8">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="level" layoutX="135.0" layoutY="55.0" prefHeight="27.0" prefWidth="158.0" stylesheets="@../../style.css/elementHistory.css" text="Level:  ..." textFill="#f1f5f8">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="time" layoutX="135.0" layoutY="96.0" prefHeight="27.0" prefWidth="158.0" stylesheets="@../../style.css/elementHistory.css" text="Time: ..." textFill="#f1f5f8">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="score" alignment="CENTER_RIGHT" layoutX="583.0" layoutY="15.0" prefHeight="80.0" prefWidth="187.0" stylesheets="@../../style.css/elementHistory.css" text="100pt" textFill="#f1f5f8">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="date" alignment="CENTER_RIGHT" layoutX="313.0" layoutY="96.0" prefHeight="30.0" prefWidth="456.0" stylesheets="@../../style.css/elementHistory.css" text="Date: ..." textFill="#f1f5f8">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

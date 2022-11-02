@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&family=Roboto:wght@300;400;500&display=swap');
+#sideBar {
+	-fx-background-color: "#393351";
+	-fx-font-family: 'Roboto', sans-serif;
+}
+
+#main {
+	-fx-background-color: "#2f2b43";
+	-fx-font-family: 'JetBrains Mono', monospace;
+	-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #2f2b43, #5B48A7);
+}
+
+#heading, #subHeading {
+	-fx-font-family: 'JetBrains Mono', monospace;
+}
+
+
+#logo {
+	-fx-text-fill: "#f1f5f8";
+}
+
+#team {
+	-fx-text-fill: "#f1f5f8";
+	-fx-font-size: 48px;
+}
+
+#backButton {
+	-fx-text-fill: "#f1f5f8";
+	-fx-font-size: 20pt;
+}
+
+#heading {
+	-fx-text-fill: "#f1f5f8";
+	-fx-font-size: 60pt;
+}
+
+.button {
+	-fx-background-color: "#393351";
+	-fx-cursor: hand;
+	-fx-text-fill: "#f1f5f8";
+}
+
+#main .button {
+	-fx-background-radius: 30 30 30 30;
+}
+.button:hover {
+	-fx-background-color: "#2A1C42";
+}
+
+.button:pressed {
+	-fx-background-color: "#7156DD";
+}
+
+.button:focused {
+	-fx-background-color: "#7156DD";
+}
+
+
+
+

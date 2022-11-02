@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&family=Roboto:wght@300;400;500&display=swap');
+
+.dialog {
+	-fx-background-color: #39344f;
+	-fx-font-family: 'JetBrains Mono', monospace;
+}
+
+.dialog:header *.header-panel {
+	-fx-background-color: #2f2b43;
+	-fx-font-family: 'JetBrains Mono', monospace;
+}
+
+.dialog > *.content.label {
+	-fx-font-size: 16px;
+	-fx-text-fill: #f1f5f8;
+	-fx-line-height: 1.5;
+	-fx-letter-spacing: 2px;
+}
+
+.dialog:header *.header-panel *.label {
+	-fx-font-size: 40px;
+	-fx-line-height: 1.5;
+	-fx-text-fill: #f1f5f8;
+	-fx-letter-spacing: 3px;
+}
+
+.dialog > *.button-bar *.button {
+	-fx-font-size: 18px;
+	-fx-background-color: #5B48A7;
+	-fx-background-radius: 30;
+	-fx-text-fill: #f1f5f8;
+	-fx-cursor: hand;
+	-fx-font-family: 'JetBrains Mono', monospace;
+
+}
+
+.dialog > *.button-bar *.button:hover {
+	-fx-background-color: "#7156DD";
+}

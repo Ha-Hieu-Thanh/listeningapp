@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&family=Roboto:wght@300;400;500&display=swap');
+
+#namePodcast, #track, #hint, #textAnswer {
+	-fx-font-family: 'JetBrains Mono', monospace;
+}
+
+#hint {
+	-fx-font-size: 24px;
+}
+
+#hintButton, #replayButton, #nextButton, #finishButton {
+	-fx-font-family: 'JetBrains Mono', monospace;
+	-fx-font-size: 24px;
+}
+
+#speedBox {
+	-fx-font-size: 16px;
+	-fx-font-family: 'JetBrains Mono', monospace;
+}
+

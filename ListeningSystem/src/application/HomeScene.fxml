@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomeController">
+   <children>
+      <AnchorPane fx:id="sideBar" prefHeight="800.0" prefWidth="320.0">
+         <children>
+            <VBox layoutX="-1.0" layoutY="225.0" prefHeight="506.0" prefWidth="322.0">
+               <children>
+                  <Button fx:id="historyButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#viewHistory" prefHeight="84.0" prefWidth="320.0" styleClass="sideBarButton" stylesheets="@../../style.css/base.css" text=" History">
+                     <graphic>
+                        <ImageView fx:id="iconHistory" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                     <padding>
+                        <Insets left="30.0" top="20.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="statisticButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#viewStatisticScore" prefHeight="84.0" prefWidth="320.0" styleClass="sideBarButton" stylesheets="@../../style.css/base.css" text=" Statistic Score">
+                     <graphic>
+                        <ImageView fx:id="iconChart" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                     <padding>
+                        <Insets left="30.0" top="20.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="studyButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#study" prefHeight="84.0" prefWidth="320.0" styleClass="sideBarButton" stylesheets="@../../style.css/base.css" text="Study Design Thinking">
+                     <graphic>
+                        <ImageView fx:id="iconStudy" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                     <padding>
+                        <Insets left="30.0" top="20.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="exitButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#exit" prefHeight="84.0" prefWidth="320.0" styleClass="sideBarButton" stylesheets="@../../style.css/base.css" text=" Exit">
+                     <graphic>
+                        <ImageView fx:id="iconLogout" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                     <padding>
+                        <Insets left="30.0" top="20.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </VBox>
+            <Button fx:id="helpButton" alignment="CENTER" layoutX="14.0" layoutY="731.0" mnemonicParsing="false" onAction="#showHelp" prefHeight="38.0" prefWidth="49.0">
+               <graphic>
+                  <ImageView fx:id="iconHelp" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Button>
+            <Label fx:id="team" alignment="CENTER" layoutX="1.0" prefHeight="130.0" prefWidth="320.0" text="TEAM 1">
+               <graphic>
+                  <ImageView fx:id="iconLogo" fitHeight="78.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="main" layoutX="320.0" prefHeight="800.0" prefWidth="960.0">
+         <children>
+            <Label fx:id="heading" alignment="CENTER" layoutX="7.0" prefHeight="146.0" prefWidth="962.0" text="Listen And Write" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="50.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imgHome" fitHeight="300.0" fitWidth="280.0" layoutX="348.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <InnerShadow />
+               </effect></ImageView>
+            <Button fx:id="listenButton" layoutX="348.0" layoutY="636.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="280.0" text=" Listening">
+               <graphic>
+                  <ImageView fx:id="iconListen" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Label fx:id="subHeading" alignment="CENTER" layoutX="7.0" layoutY="146.0" prefHeight="74.0" prefWidth="962.0" text="Improve your english immediately" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="48.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+   <stylesheets>
+      <URL value="@../../style.css/base.css" />
+      <URL value="@../../style.css/homeStyle.css" />
+   </stylesheets>
+</AnchorPane>
